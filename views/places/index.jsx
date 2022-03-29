@@ -1,26 +1,6 @@
 const React = require('react')
-const Def = require('./default')
+const Def = require('../default')
 
-
-app.get('/', (req, res) => {
-    let places = [{
-      name: 'H-Thai-ML',
-      city: 'Seattle',
-      state: 'WA',
-      cuisines: 'Thai, Pan-Asian',
-      pic: 'http://placekitten.com/250/250'
-    }, {
-      name: 'Coding Cat Cafe',
-      city: 'Phoenix',
-      state: 'AZ',
-      cuisines: 'Coffee, Bakery',
-      pic: 'http://placekitten.com/250/250'
-    }]
-    res.render('places/index')
-  })
-  
-  res.render('places/index', { places })
-  
 
 function index (data) {
     let placesFormatted = data.places.map((place) => {
