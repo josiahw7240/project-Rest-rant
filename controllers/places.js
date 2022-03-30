@@ -5,12 +5,7 @@ router.get("/", (req, res) => {
 });
 
 // GET /places
-app.get("/", (req, res) => {
-  let places = [];
-  res.render("places/index");
-});
-
-app.get("/", (req, res) => {
+router.get("/", (req, res) => {
   let places = [
     {
       name: "H-Thai-ML",
@@ -27,11 +22,8 @@ app.get("/", (req, res) => {
       pic: "http://placekitten.com/250/250",
     },
   ];
-  res.render("places/index");
+  res.render("places/index", { places });
 });
-
-res.render("places/index", { places });
-
 module.exports = router;
 
 //test
