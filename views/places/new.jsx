@@ -6,6 +6,20 @@ function new_form () {
         <Def>
             <main>
                 <h1>Add a New Place</h1>
+                <form method="POST" action="/places">
+                  <div>
+                    <label htmlFor="name">Place Name</label>
+                    <input id="name" name="name" />
+                  </div>
+                  <div>
+                    <label htmlFor="pic">Place Picture</label>
+                    <input type="url" id="pic" name="pic" />
+                  </div>
+                  <div>
+                    <label htmlFor="state">State</label>
+                    <input id="state" name="state" />  
+                  </div>
+                </form>
             </main>
         </Def>
     )
